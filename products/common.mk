@@ -98,6 +98,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JLS36C BUILD_ID=JLS36C BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_EST_DATE=$(shell date +"%s")
 
 PRODUCT_COPY_FILES += \
+    vendor/vanir/proprietary/common/app/Focal.apk:system/app/Focal.apk
+
+PRODUCT_COPY_FILES += \
     vendor/vanir/proprietary/common/xbin/sysrw:system/xbin/sysrw \
     vendor/vanir/proprietary/common/xbin/sysro:system/xbin/sysro \
     vendor/vanir/proprietary/common/xbin/vanirinteractivegovernorgovernor:system/xbin/vanirinteractivegovernorgovernor \
