@@ -11,7 +11,7 @@ PRODUCT_PACKAGES += \
     busybox \
     Email \
     VoicePlus \
-    VanirUpdater
+    Fpcal
 
 Vanir_Version=4.3
 
