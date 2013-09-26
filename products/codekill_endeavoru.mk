@@ -6,7 +6,7 @@ KERNEL_SPAM := CM Kernel
 
 PRODUCT_PROPERTY_OVERRIDES += \
     drm.service.enabled=true 
-
+  
 
 # Boot Animation
 PRODUCT_COPY_FILES += \
@@ -24,14 +24,16 @@ $(call inherit-product, vendor/codekill/products/beats.mk)
 PRODUCT_COPY_FILES += \
     vendor/codekill/proprietary/jf/etc/vanir.cfg:system/etc/vanir.cfg
 
-# Inherit AOSP device configuration for GS3.
-$(call inherit-product, device/samsung/i9300/full_i9300.mk)
+# Inherit AOSP device configuration for GS3 TMO.
+$(call inherit-product, device/htc/endeavoru/full_endeavoru.mk)
 
 # Set those variables here to overwrite the inherited values.
-PRODUCT_NAME := codekill_i9300
-PRODUCT_DEVICE := i9300
-PRODUCT_BRAND := Samsung
-PRODUCT_MANUFACTURER := Samsung
-PRODUCT_MODEL := GT-I9300
+PRODUCT_NAME := codekill_endeavoru
+PRODUCT_DEVICE := endeavoru
+PRODUCT_BRAND := htc_europe
+PRODUCT_MANUFACTURER := HTC
+PRODUCT_MODEL := HTC ONE X
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=m0xx TARGET_DEVICE=m0 BUILD_FINGERPRINT="samsung/m0xx/m0:4.3/JLS36C/I9300XXDLIB:user/release-keys" PRIVATE_BUILD_DESC="m0xx-user 4.3 JLS36C I9300XXDLIB release-keys"
+
+#Set build fingerprint / ID / Product Name ect.
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=endeavoru TARGET_DEVICE=endeavoru BUILD_FINGERPRINT="htc_europe/endeavoru/endeavoru:4.1.1/JRO03C/128187.31:user/release-keys" PRIVATE_BUILD_DESC="3.14.401.31 CL128187 release-keys"

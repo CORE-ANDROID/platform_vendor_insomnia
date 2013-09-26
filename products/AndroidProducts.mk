@@ -4,8 +4,9 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/codekill_d2spr.mk \
     $(LOCAL_DIR)/codekill_d2tmo.mk \
     $(LOCAL_DIR)/codekill_d2vzw.mk \
-	$(LOCAL_DIR)/codekill_e975.mk \
-	$(LOCAL_DIR)/codekill_e980.mk \
+    $(LOCAL_DIR)/codekill_e975.mk \
+    $(LOCAL_DIR)/codekill_e980.mk \
+    $(LOCAL_DIR)/codekill_endeavoru.mk \
     $(LOCAL_DIR)/codekill_flo.mk \
     $(LOCAL_DIR)/codekill_grouper.mk \
     $(LOCAL_DIR)/codekill_hercules.mk \
