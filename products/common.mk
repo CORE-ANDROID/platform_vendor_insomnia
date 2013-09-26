@@ -102,7 +102,7 @@ PRODUCT_COPY_FILES += \
     vendor/codekill/proprietary/common/xbin/sysro:system/xbin/sysro \
     vendor/codekill/proprietary/common/xbin/vanirinteractivegovernorgovernor:system/xbin/vanirinteractivegovernorgovernor \
     vendor/codekill/proprietary/common/xbin/vanirflash:system/xbin/vanirflash \
-    vendor/codekill/proprietary/common/init.codekill.rc:root/init.codekill.rc \
+    vendor/codekill/proprietary/common/init.vanir.rc:root/init.vanir.rc \
     vendor/codekill/proprietary/common/bin/sysinit:system/bin/sysinit \
     vendor/codekill/proprietary/common/etc/init.d/00firsties:system/etc/init.d/00firsties \
     vendor/codekill/proprietary/common/xbin/purgethumbnails:system/xbin/purgethumbnails
