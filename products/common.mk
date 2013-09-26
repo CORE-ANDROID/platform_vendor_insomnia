@@ -1,6 +1,6 @@
 # Theme files
 PRODUCT_PACKAGE_OVERLAYS += \
-    vendor/vanir/overlay/theme
+    vendor/codekill/overlay/theme
 
 # DSPManager and bravia
 $(call inherit-product, vendor/codekill/products/media_sexificators.mk)
@@ -11,7 +11,7 @@ PRODUCT_PACKAGES += \
     busybox \
     Email \
     VoicePlus \
-    Fpcal
+    
 
 CodeKill_Version=4.3
 
@@ -94,8 +94,17 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Version information used on all builds
 PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JLS36C BUILD_ID=JLS36C BUILD_VERSION_TAGS=release-keys USER=android-build BUILD_EST_DATE=$(shell date +"%s")
 
+# Goodies
 PRODUCT_COPY_FILES += \
-    vendor/codekill/proprietary/common/app/Focal.apk:system/app/Focal.apk
+    vendor/codekill/proprietary/common/app/Focal.apk:system/app/Focal.apk \
+    vendor/codekill/proprietary/common/app/darknap.apk:system/app/darknap.apk \
+    vendor/codekill/proprietary/common/app/estrongs.apk:system/app/estrongs.apk \
+    vendor/codekill/proprietary/common/app/googlemusic.apk:system/app/googlemusic.apk \
+    vendor/codekill/proprietary/common/app/mianogen.apk:system/app/mianogen.apk \
+    vendor/codekill/proprietary/common/app/Wallpapers.apk:system/app/Wallpapers.apk 
+
+
+
 
 PRODUCT_COPY_FILES += \
     vendor/codekill/proprietary/common/xbin/sysrw:system/xbin/sysrw \
@@ -187,7 +196,7 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Basic \
     SoundRecorder \
-    VanirUpdater
+    
 
 # Extra tools in CM
 PRODUCT_PACKAGES += \
