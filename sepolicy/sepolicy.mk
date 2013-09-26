@@ -4,7 +4,7 @@
 #
 
 BOARD_SEPOLICY_DIRS := \
-    vendor/vanir/sepolicy
+    vendor/codekill/sepolicy
 
 BOARD_SEPOLICY_UNION := \
     mac_permissions.xml

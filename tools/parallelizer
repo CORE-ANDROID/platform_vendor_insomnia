@@ -2,7 +2,7 @@
 
 export ANDROID_BUILD_TOP=$ANDROID_BUILD_TOP
 
-. $ANDROID_BUILD_TOP/vendor/vanir/tools/functions
+. $ANDROID_BUILD_TOP/vendor/codekill/tools/functions
 
 
 if [ "$1" = "worker" ]; then   

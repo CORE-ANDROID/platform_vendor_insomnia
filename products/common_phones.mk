@@ -1,5 +1,5 @@
 # Vanir common
-$(call inherit-product, vendor/vanir/products/common.mk)
+$(call inherit-product, vendor/codekill/products/common.mk)
 
 PRODUCT_PACKAGES += \
     SpeakerProximity

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Common functions for Vanir otatools
+# Common functions for CodeKill otatools
 #
 # cdesai
 
@@ -28,5 +28,5 @@ else
    export SED=gsed
 fi
 
-export OPTICHARGER=$ANDROID_BUILD_TOP/vendor/vanir/tools/opticharger
-export PARALLELIZER=$ANDROID_BUILD_TOP/vendor/vanir/tools/parallelizer
+export OPTICHARGER=$ANDROID_BUILD_TOP/vendor/codekill/tools/opticharger
+export PARALLELIZER=$ANDROID_BUILD_TOP/vendor/codekill/tools/parallelizer
