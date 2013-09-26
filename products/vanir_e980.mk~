@@ -1,0 +1,36 @@
+#Squisher Choosing
+DHO_VENDOR := codekill
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    drm.service.enabled=true \
+    ro.config.vc_call_vol_steps=7 \
+    ring.delay=0 \
+    ro.telephony.call_ring.delay=50 \
+    ro.ril.fast.dormancy.rule=0 
+ 
+
+# Boot animation
+PRODUCT_COPY_FILES += \
+    vendor/codekill/proprietary/boot_animations/1080x1920.zip:system/media/bootanimation.zip
+
+# Vanir configuration
+$(call inherit-product, vendor/codekill/products/common_phones.mk)
+$(call inherit-product, vendor/codekill/products/gsm.mk)
+$(call inherit-product, vendor/codekill/products/beats.mk)
+
+# Inherit AOSP device configuration for Optimus G Pro.
+$(call inherit-product, device/lge/e980/e980.mk)
+
+# Default values used by 99vanir. copied to /sdcard on first run, and presently it lives there forever... todo: make a runonce script that adds new default values to the copy on the sdcard as we add them or something
+PRODUCT_COPY_FILES += \
+    vendor/codekill/proprietary/common/etc/mako-vanir.cfg:system/etc/vanir.cfg
+
+# Setup device specific product configuration.
+PRODUCT_NAME := codekill_e980
+PRODUCT_DEVICE := e980
+PRODUCT_BRAND := lge
+PRODUCT_MODEL := Optimus G Pro
+PRODUCT_MANUFACTURER := LGE
+PRODUCT_RESTRICT_VENDOR_FILES := false
+
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=>geefhd_open_eu BUILD_FINGERPRINT=lge/geefhd_open_eu/geefhd:4.3/JLS36C/E98610b.1373081564:user/release-keys PRIVATE_BUILD_DESC="geefhd_open_eu-user 4.3 JLS36C E98610b.1373081564 release-keys"
