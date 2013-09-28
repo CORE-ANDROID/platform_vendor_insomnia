@@ -11,6 +11,7 @@ PRODUCT_PACKAGES += \
     busybox \
     Email \
     VoicePlus \
+    CodeKillUpdate
     
 
 CodeKill_Version=4.3
