@@ -2,20 +2,12 @@
 ZOMG_ITS_A_COMBO_COMBO()
 {
   for x in \
-    deb \
     d2att \
     d2spr \
     d2tmo \
     d2vzw \
-    e975 \
-    e980 \
     endeavoru \
-    flo \
     grouper \
-    hercules \
-    i605 \
-    i9300 \
-    i9305 \
     jewel \
     jflteatt \
     jfltecan \
@@ -31,18 +23,12 @@ ZOMG_ITS_A_COMBO_COMBO()
     maguro \
     manta \
     mako \
-    maserati \
-    ovation \
-    p880 \
-    pollux \
     t0lteatt \
     t0ltetmo \
     tilapia \
     toro \
-    p700 \
     toroplus \
-    vigor \
-    yuga;
+    vigor; 
   do
     add_lunch_combo codekill_$x-$1
   done
