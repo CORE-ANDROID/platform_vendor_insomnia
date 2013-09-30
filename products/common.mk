@@ -97,7 +97,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JLS36C BUILD_ID=JLS36C BUILD_VE
 
 # Goodies
 PRODUCT_COPY_FILES += \
-    vendor/codekill/proprietary/common/app/Focal.apk:system/app/Focal.apk \
     vendor/codekill/proprietary/common/app/darknap.apk:system/app/darknap.apk \
     vendor/codekill/proprietary/common/app/estrongs.apk:system/app/estrongs.apk \
     vendor/codekill/proprietary/common/app/googlemusic.apk:system/app/googlemusic.apk \
