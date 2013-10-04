@@ -10,8 +10,8 @@ $(call inherit-product, vendor/codekill/config/nfc_enhanced.mk)
 PRODUCT_PACKAGES += \
     busybox \
     Email \
-    VoicePlus \
-    CodeKillUpdate
+    VoicePlus 
+    
     
 
 CodeKill_Version=4.3
@@ -235,7 +235,7 @@ PRODUCT_PACKAGES += \
     ThemeManager \
     ThemeChooser \
     com.tmobile.themes \
-    Vanir_Inverted
+    Inverted
 
 # sqlite3 - for bad voodoo :-D
 PRODUCT_PACKAGES += \
