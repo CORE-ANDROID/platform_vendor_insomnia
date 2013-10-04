@@ -6,9 +6,6 @@ ZOMG_ITS_A_COMBO_COMBO()
     d2spr \
     d2tmo \
     d2vzw \
-    endeavoru \
-    grouper \
-    jewel \
     jflteatt \
     jfltecan \
     jfltecri \
@@ -20,15 +17,8 @@ ZOMG_ITS_A_COMBO_COMBO()
     m7tmo \
     m7ul \
     m7vzw \
-    maguro \
-    manta \
-    mako \
-    t0lteatt \
-    t0ltetmo \
-    tilapia \
-    toro \
-    toroplus \
-    vigor; 
+    mako;
+ 
   do
     add_lunch_combo codekill_$x-$1
   done
