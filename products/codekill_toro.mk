@@ -26,4 +26,12 @@ PRODUCT_DEVICE := toro
 PRODUCT_MODEL := Galaxy Nexus
 PRODUCT_MANUFACTURER := samsung
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysid BUILD_FINGERPRINT="google/mysid/toro:4.3/JLS36C/737497:user/release-keys" PRIVATE_BUILD_DESC="mysid-user 4.3 JLS36C 737497 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=mysid BUILD_FINGERPRINT="google/mysid/toro:4.3/JLS36G/737497:user/release-keys" PRIVATE_BUILD_DESC="mysid-user 4.3 JLS36G 737497 release-keys"
+
+# 720p overlay
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/codekill/overlay/720p
+
+# Hot reboot
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/codekill/overlay/hot_reboot

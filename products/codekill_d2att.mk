@@ -35,3 +35,11 @@ PRODUCT_MANUFACTURER := Samsung
 PRODUCT_MODEL := SGH-I747
 
 PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=d2att TARGET_DEVICE=d2att BUILD_FINGERPRINT="samsung/d2att/d2att:4.3/JLS36G/I747UCDMG2:user/release-keys" PRIVATE_BUILD_DESC="d2att-user 4.3 JLS36G I747UCDMG2 release-keys"
+
+# 720p overlay
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/codekill/overlay/720p
+
+# Hot reboot
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/codekill/overlay/hot_reboot

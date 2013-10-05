@@ -33,4 +33,12 @@ PRODUCT_MODEL := Nexus 4
 PRODUCT_MANUFACTURER := LGE
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
-PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT=google/occam/mako:4.3/JLS36C/737497:user/release-keys PRIVATE_BUILD_DESC="occam-user 4.3 JLS36C 737497 release-keys"
+PRODUCT_BUILD_PROP_OVERRIDES += PRODUCT_NAME=occam BUILD_FINGERPRINT=google/occam/mako:4.3/JLS36G/737497:user/release-keys PRIVATE_BUILD_DESC="occam-user 4.3 JLS36G 737497 release-keys"
+
+# 720p overlay
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/codekill/overlay/720p
+
+# Hot reboot
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/codekill/overlay/hot_reboot
