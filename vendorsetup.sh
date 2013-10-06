@@ -17,6 +17,7 @@ ZOMG_ITS_A_COMBO_COMBO()
     m7tmo \
     m7ul \
     m7vzw \
+    grouper \
     mako;
  
   do
