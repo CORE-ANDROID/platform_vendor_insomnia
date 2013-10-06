@@ -3,7 +3,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/codekill_d2spr.mk \
     $(LOCAL_DIR)/codekill_d2tmo.mk \
     $(LOCAL_DIR)/codekill_d2vzw.mk \
-    $(LOCAL_DIR)/codekill_endeavoru.mk \
     $(LOCAL_DIR)/codekill_grouper.mk \
     $(LOCAL_DIR)/codekill_jewel.mk \
     $(LOCAL_DIR)/codekill_m7att.mk \
@@ -22,5 +21,5 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/codekill_t0ltetmo.mk \
     $(LOCAL_DIR)/codekill_toro.mk \
     $(LOCAL_DIR)/codekill_toroplus.mk \
-    $(LOCAL_DIR)/codekill_tilapia.mk \
-    $(LOCAL_DIR)/codekill_vigor.mk
+    $(LOCAL_DIR)/codekill_tilapia.mk 
+   
