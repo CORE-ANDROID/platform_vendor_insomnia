@@ -117,9 +117,7 @@ echo -e ""
 # squisher
 vendor/codekill/tools/squisher
 
-# cleanup unused built
-rm -f out/target/product/$device/cm-*.*
-rm -f out/target/product/$device/codekill_*-ota*.zip
+
 
 # finished? get elapsed time
 t2=$($DATE +%s)
