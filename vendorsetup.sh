@@ -5,18 +5,10 @@ ZOMG_ITS_A_COMBO_COMBO()
     d2att \
     d2spr \
     d2tmo \
-    d2vzw \
-    jflteatt \
-    jfltecan \
-    jfltecri \
-    jfltespr \
     jfltetmo \
-    jfltevzw \
     m7att \
     m7spr \
     m7tmo \
-    m7ul \
-    m7vzw \
     grouper \
     mako;
  
