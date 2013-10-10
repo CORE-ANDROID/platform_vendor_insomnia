@@ -9,8 +9,8 @@ $(call inherit-product, vendor/codekill/config/nfc_enhanced.mk)
 # Build packages included in manifest
 PRODUCT_PACKAGES += \
     busybox \
-    Email \
-    VoicePlus 
+    Email 
+   
     
     
 
@@ -97,10 +97,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JLS36C BUILD_ID=JLS36C BUILD_VE
 
 # Goodies
 PRODUCT_COPY_FILES += \
-    vendor/codekill/proprietary/common/app/darknap.apk:system/app/darknap.apk \
+    vendor/codekill/proprietary/common/app/Themer.apk:system/app/Themer.apk \
     vendor/codekill/proprietary/common/app/estrongs.apk:system/app/estrongs.apk \
     vendor/codekill/proprietary/common/app/googlemusic.apk:system/app/googlemusic.apk \
-    vendor/codekill/proprietary/common/app/mianogen.apk:system/app/mianogen.apk \
     vendor/codekill/proprietary/common/app/Wallpapers.apk:system/app/Wallpapers.apk 
 
 
@@ -192,10 +191,12 @@ PRODUCT_PACKAGES += \
     org.cyanogenmod.hardware \
     org.cyanogenmod.hardware.xml
 
-# Optional CM packages
+# Optional packages
 PRODUCT_PACKAGES += \
     Basic \
-    SoundRecorder \
+    ROMSettings \
+    SoundRecorder 
+  
     
 
 # Extra tools in CM
@@ -234,8 +235,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     ThemeManager \
     ThemeChooser \
-    com.tmobile.themes \
-    Inverted
+    com.tmobile.themes 
+  
 
 # sqlite3 - for bad voodoo :-D
 PRODUCT_PACKAGES += \
