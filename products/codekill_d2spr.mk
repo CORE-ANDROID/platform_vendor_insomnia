@@ -41,5 +41,5 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/codekill/overlay/720p
 
 # Hot reboot
-PRODUCT_PACKAGE_OVERLAYS += \
+#PRODUCT_PACKAGE_OVERLAYS += \
     vendor/codekill/overlay/hot_reboot
