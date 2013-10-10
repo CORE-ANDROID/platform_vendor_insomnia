@@ -1,7 +1,7 @@
 #Squisher Choosing
 DHO_VENDOR := codekill
 
-KERNEL_SPAM := Faux Kernel v013u IN THE H1ZNOUSE
+KERNEL_SPAM := CM Kernel
 
 PRODUCT_PACKAGES += \
     Camera \
