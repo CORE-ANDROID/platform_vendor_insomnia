@@ -136,8 +136,8 @@ grep CLOBBER= "$TEMP" >> "$CONFIG"
 grep FTPYN= "$TEMP" >> "$CONFIG"
 grep SCPYN= "$TEMP" >> "$CONFIG"
 echo "REPODIR=$REPODIR" >> "$CONFIG"
-grep CodeKill_Version= "$REPODIR/vendor/codekill/products/common.mk" >>$CONFIG
-grep 'PRODUCT_NAME :=' "$REPODIR/vendor/codekill/products/common.mk" >>$CONFIG
+grep Insomnia_Version= "$REPODIR/vendor/insomnia/products/common.mk" >>$CONFIG
+grep 'PRODUCT_NAME :=' "$REPODIR/vendor/insomnia/products/common.mk" >>$CONFIG
 sed -i 's/PRODUCT_NAME := /ROMNAME=/g' $CONFIG >> $CONFIG
 echo 'PICKS=". picks.sh"' >> "$CONFIG"
 echo 'FTP=". ftp.sh"' >> "$CONFIG"
@@ -145,7 +145,7 @@ echo 'DATE=$(date +".%m%d%y")' >> "$CONFIG"
 echo 'SOURCE="$REPODIR"/"$ROMNAME"' >> "$CONFIG"
 echo 'ZIPDIR="/out/target/product"' >> "$CONFIG"
 echo 'TARGET_DIR="$REPODIR""$ZIPDIR""/""$DEVICE""/"' >> "$CONFIG"
-echo 'VERSION="$ROMNAME"_"$DEVICE"_"$CodeKill_Version$DATE"' >> "$CONFIG"
+echo 'VERSION="$ROMNAME"_"$DEVICE"_"$Insomnia_Version$DATE"' >> "$CONFIG"
 echo 'SITEHTML="index.html"' >> "$CONFIG"
 echo 'TEMPHTML="temp"' >> "$CONFIG"
 echo 'FILE="$VERSION.zip"' >> "$CONFIG"
@@ -177,7 +177,7 @@ lunch "$ROMNAME"_"$DEVICE"-userdebug -j$BRUNCH
 mka bacon -j$BRUNCH
 mkdir -p $REPODIR/$DEVICE
 cp $TARGET_DIR$FILE $REPODIR/$DEVICE/"$ROMNAME"_"$DEVICE""$DATE".zip
-echo "Done building "$ROMNAME" "$DEVICE" "$CodeKill_Version$DATE""
+echo "Done building "$ROMNAME" "$DEVICE" "$Insomnia_Version$DATE""
 echo "Your local copy is in $REPODIR/$DEVICE"
 if [[ "$FTPYN" == "Y" || "$FTPYN" == "y" ]]; then(
 . ftp-config

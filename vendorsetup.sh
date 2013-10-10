@@ -13,7 +13,7 @@ ZOMG_ITS_A_COMBO_COMBO()
     mako;
  
   do
-    add_lunch_combo codekill_$x-$1
+    add_lunch_combo insomnia_$x-$1
   done
 }
 

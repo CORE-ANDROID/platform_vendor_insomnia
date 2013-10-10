@@ -11,7 +11,7 @@ MMS=$APPS/Mms
 PHONE=$APPS/Phone
 TORCH=$APPS/Torch
 DESKCLOCK=$APPS/DeskClock
-VENDOR=$REPODIR/vendor/codekill
+VENDOR=$REPODIR/vendor/insomnia
 echo "Pulling your cherry-picks"
 cd $VENDOR
 git fetch http://vaniraosp.goo.im/platform_vendor_vanir refs/changes/98/2998/1 && git cherry-pick FETCH_HEAD

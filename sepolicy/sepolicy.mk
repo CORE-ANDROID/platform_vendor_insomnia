@@ -4,7 +4,7 @@
 #
 
 BOARD_SEPOLICY_DIRS := \
-    vendor/codekill/sepolicy
+    vendor/insomnia/sepolicy
 
 BOARD_SEPOLICY_UNION := \
     mac_permissions.xml
