@@ -5,12 +5,11 @@ ZOMG_ITS_A_COMBO_COMBO()
     d2att \
     d2spr \
     d2tmo \
-    jfltetmo \
     m7att \
     m7spr \
     m7tmo \
     grouper \
-    mako;
+    pyramid;
  
   do
     add_lunch_combo insomnia_$x-$1
