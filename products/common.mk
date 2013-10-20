@@ -16,10 +16,10 @@ PRODUCT_PACKAGES += \
 
 InsomniaROM_Version=4.3
 
-Insomnia_BUILD=$(Insomnia_Version)
+Insomnia_BUILD=$(InsomniaROM_Version)
 
 ifeq ($(RELEASE),)
-Insomnia_BUILD=$(Insomnia_Version)$(shell date +".%m%d%y")
+Insomnia_BUILD=$(InsomniaROM_Version)$(shell date +".%m%d%y")
 endif
 
 # Build Properties
@@ -36,6 +36,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=Proxima.ogg \
     ro.config.alarm_alert=Alarm_Beep_03.ogg \
     ro.modversion=$(Insomnia_BUILD) \
+    ro.insomnia.version=$(Insomnia_BUILD) \
     wifi.supplicant_scan_interval=300 \
     persist.sys.root_access=3 \
     ro.build.selinux=1

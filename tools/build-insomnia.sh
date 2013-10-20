@@ -114,11 +114,6 @@ fi
 make -j"$opt_jobs" bacon
 echo -e ""
 
-# squisher
-vendor/insomnia/tools/squisher
-
-
-
 # finished? get elapsed time
 t2=$($DATE +%s)
 

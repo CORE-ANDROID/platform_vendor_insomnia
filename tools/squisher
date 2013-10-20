@@ -92,9 +92,9 @@ rm -rf $REPACK/ota/recovery
 
 # Determine what to name the new signed package
 if [ -z "$CYANOGEN_NIGHTLY" ]; then
-	INSOMNIAVERSION=`grep 'ro.insomnia.version=' $REPACK/ota/system/build.prop | sed -e 's/ro.insomnia.version=//g'`
+        INSOMNIAVERSION=`grep 'ro.insomnia.version=' $REPACK/ota/system/build.prop | sed -e 's/ro.insomnia.version=//g'`
 	ABIGEN=`grep 'ro.product.cpu.abi=' $REPACK/ota/system/build.prop | sed -e 's/ro.product.cpu.abi=//g'`
-	OUTFILE=$OUT/$INSOMNIAVERSION.zip
+	OUTFILE=$OUT/$TARGET_PRODUCT-$INSOMNIAVERSION.zip
 	echo -e ""; echo -e "${bldppl}INSOMNIA${bldylw}-VERSION${txtrst}:${cya} $INSOMNIAVERSION"${txtrst}; echo -e ""
 else
 	OUTFILE=$OUT/update-squished.zip
@@ -124,7 +124,7 @@ rm -rf $REPACK
 (
 img=`basename $OUTFILE`
 cd `dirname $OUTFILE`
-$MD5 $img >$img.md5sum
+$MD5 $img >$img.md5
 ZIPSIZE=`ls -lah $OUTFILE | awk '{ print $5}'`
 echo -e ""; echo -e ${bldgrn}"Package complete:"${txtrst}
 echo -e ${cya}"ZIP:${ppl}  $img"${txtrst}

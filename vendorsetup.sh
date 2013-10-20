@@ -9,6 +9,7 @@ ZOMG_ITS_A_COMBO_COMBO()
     m7spr \
     m7tmo \
     grouper \
+    vigor \
     pyramid;
  
   do
