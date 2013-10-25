@@ -9,6 +9,7 @@ $(call inherit-product, vendor/insomnia/config/nfc_enhanced.mk)
 # Build packages included in manifest
 PRODUCT_PACKAGES += \
     busybox \
+    onager \
     Email 
    
     
@@ -196,6 +197,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Basic \
     ROMSettings \
+    Onager \
+    PerformanceControl \
     SoundRecorder 
   
     
