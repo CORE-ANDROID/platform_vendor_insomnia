@@ -10,6 +10,7 @@ $(call inherit-product, vendor/insomnia/config/nfc_enhanced.mk)
 PRODUCT_PACKAGES += \
     busybox \
     onager \
+    PerformanceControl \
     Email 
    
     
