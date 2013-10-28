@@ -9,7 +9,6 @@ $(call inherit-product, vendor/insomnia/config/nfc_enhanced.mk)
 # Build packages included in manifest
 PRODUCT_PACKAGES += \
     busybox \
-    onager \
     PerformanceControl \
     Email 
    
@@ -100,10 +99,8 @@ PRODUCT_BUILD_PROP_OVERRIDES += BUILD_DISPLAY_ID=JLS36I BUILD_ID=JLS36I BUILD_VE
 
 # Goodies
 PRODUCT_COPY_FILES += \
-    vendor/insomnia/proprietary/common/app/Themer.apk:system/app/Themer.apk \
-    vendor/insomnia/proprietary/common/app/estrongs.apk:system/app/estrongs.apk \
-    vendor/insomnia/proprietary/common/app/googlemusic.apk:system/app/googlemusic.apk \
-    vendor/insomnia/proprietary/common/app/Wallpapers.apk:system/app/Wallpapers.apk 
+    vendor/insomnia/proprietary/common/app/Nova.apk:system/app/Nova.apk 
+  
 
 
 
