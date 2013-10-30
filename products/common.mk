@@ -9,7 +9,6 @@ $(call inherit-product, vendor/insomnia/config/nfc_enhanced.mk)
 # Build packages included in manifest
 PRODUCT_PACKAGES += \
     busybox \
-    PerformanceControl \
     KernelControls \
     Email 
    
@@ -183,7 +182,7 @@ PRODUCT_PACKAGES += \
     Camera \
     Development \
     LatinIME \
-    Superuser \
+    SuperSU \
     su \
     BluetoothExt
 
@@ -208,8 +207,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     Basic \
     ROMSettings \
-    Onager \
-    PerformanceControl \
     SoundRecorder 
   
     
