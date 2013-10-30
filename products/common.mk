@@ -9,7 +9,6 @@ $(call inherit-product, vendor/insomnia/config/nfc_enhanced.mk)
 # Build packages included in manifest
 PRODUCT_PACKAGES += \
     busybox \
-    KernelControls \
     Email 
    
     
