@@ -182,7 +182,7 @@ PRODUCT_PACKAGES += \
     Camera \
     Development \
     LatinIME \
-    SuperSU \
+    Core \
     su \
     BluetoothExt
 
@@ -192,7 +192,7 @@ SUPERUSER_EMBEDDED := true
 
 # Prebuilt SuperSU
 PRODUCT_COPY_FILES += \
-    vendor/insomnia/proprietary/common/app/Superuser.apk:system/app/superuser.apk \
+    vendor/insomnia/proprietary/common/app/Core.apk:system/app/Core.apk \
     vendor/insomnia/proprietary/common/xbin/chattr:system/xbin/chattr \
     vendor/insomnia/proprietary/common/xbin/99SuperSUDaemon:system/xbin/99SuperSUDaemon \
     vendor/insomnia/proprietary/common/xbin/su:system/xbin/su \
