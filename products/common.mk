@@ -191,11 +191,8 @@ SUPERUSER_EMBEDDED := true
 
 # Prebuilt SuperSU
 PRODUCT_COPY_FILES += \
-    vendor/insomnia/proprietary/common/app/Core.apk:system/app/Core.apk \
-    vendor/insomnia/proprietary/common/xbin/chattr:system/xbin/chattr \
-    vendor/insomnia/proprietary/common/xbin/99SuperSUDaemon:system/xbin/99SuperSUDaemon \
-    vendor/insomnia/proprietary/common/xbin/su:system/xbin/su \
-    vendor/insomnia/proprietary/common/xbin/daemonsu:system/xbin/daemonsu 
+       vendor/insomnia/proprietary/common/xbin/su:system/xbin/su 
+    
 
 # CM Hardware Abstraction Framework
 PRODUCT_PACKAGES += \
